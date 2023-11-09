@@ -1,0 +1,4 @@
+select BRAND_NAME, count(*) as NUMPRODUCTS 
+from LGPRODUCT NATURAL JOIN  LGBRAND
+group by BRAND_NAME
+order by BRAND_NAME

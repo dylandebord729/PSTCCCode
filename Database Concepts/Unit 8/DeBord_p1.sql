@@ -1,0 +1,9 @@
+create table EMP_1(
+EMP_NUM varchar(3) PRIMARY KEY,
+EMP_LNAME varchar(15) NOT NULL,
+EMP_FNAME varchar(15) NOT NULL,
+EMP_INITIAL varchar(1),
+EMP_HIREDATE date,
+JOB_CODE varchar(3),
+FOREIGN KEY(JOB_CODE) REFERENCES JOB(JOB_CODE)
+);

@@ -1,0 +1,5 @@
+select EMP_NUM, EMP_FNAME, EMP_LNAME, max(SAL_AMOUNT) as LARGESTSALARY
+from LGEMPLOYEE natural join LGSALARY_HISTORY
+where DEPT_NUM = "200"
+group by EMP_NUM
+order by max(SAL_AMOUNT) desc

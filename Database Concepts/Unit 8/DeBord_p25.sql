@@ -1,0 +1,3 @@
+update CUSTOMER
+set CUST_DOB = "1988-12-22"
+where CUST_NUM = 1001

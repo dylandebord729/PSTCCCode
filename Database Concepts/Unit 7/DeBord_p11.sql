@@ -1,0 +1,4 @@
+select CUS_CODE , INV_NUMBER , INV_DATE , P_DESCRIPT , LINE_UNITS ,
+    LINE_PRICE
+from INVOICE natural join LINE natural join PRODUCT
+order by CUS_CODE , INV_NUMBER , P_DESCRIPT

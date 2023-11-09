@@ -1,0 +1,3 @@
+select EMP_NUM , EMP_LNAME , EMP_FNAME , EMP_INITIAL
+from EMPLOYEE
+where EMP_LNAME like "Smith%"
